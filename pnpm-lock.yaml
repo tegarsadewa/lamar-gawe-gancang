@@ -1,0 +1,78 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      docxtemplater:
+        specifier: ^3.55.5
+        version: 3.55.5
+      libreoffice:
+        specifier: ^0.4.5
+        version: 0.4.5
+      nodemailer:
+        specifier: ^6.9.13
+        version: 6.9.16
+      pizzip:
+        specifier: ^3.1.7
+        version: 3.1.7
+
+packages:
+
+  '@xmldom/xmldom@0.9.6':
+    resolution: {integrity: sha512-Su4xcxR0CPGwlDHNmVP09fqET9YxbyDXHaSob6JlBH7L6reTYaeim6zbk9o08UarO0L5GTRo3uzl0D+9lSxmvw==}
+    engines: {node: '>=14.6'}
+
+  async@3.2.6:
+    resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
+
+  docxtemplater@3.55.5:
+    resolution: {integrity: sha512-M+5YjyWN4XM/Q479Zo2zgre5B82aoHXzFZO2jJCE0gZ2pYbiRFmqr9N2Qca26IZxiAoeVY7A/7QqV1L2/UnU8A==}
+    engines: {node: '>=0.10'}
+
+  libreoffice@0.4.5:
+    resolution: {integrity: sha512-Ai12fueA8Kdinnr4P3uM2aVdMfi4zU+EP3XzbyvJWUR0TS/DkNpNFheHlVn3237X3vAb92A5NSaLq+XaLAStYA==}
+    engines: {node: '>=6'}
+
+  nodemailer@6.9.16:
+    resolution: {integrity: sha512-psAuZdTIRN08HKVd/E8ObdV6NO7NTBY3KsC30F7M4H1OnmLCUNaS56FpYxyb26zWLSyYF9Ozch9KYHhHegsiOQ==}
+    engines: {node: '>=6.0.0'}
+
+  pako@2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==}
+
+  pizzip@3.1.7:
+    resolution: {integrity: sha512-VemVeAQtdIA74AN1Fsd5OmbMbEeS4YOwwlcudgzvmUrOIOPrk1idYC5Tw5FUFq/I0c26ziNOw9z//iPmGfp1jA==}
+
+  tmp@0.2.3:
+    resolution: {integrity: sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==}
+    engines: {node: '>=14.14'}
+
+snapshots:
+
+  '@xmldom/xmldom@0.9.6': {}
+
+  async@3.2.6: {}
+
+  docxtemplater@3.55.5:
+    dependencies:
+      '@xmldom/xmldom': 0.9.6
+
+  libreoffice@0.4.5:
+    dependencies:
+      async: 3.2.6
+      tmp: 0.2.3
+
+  nodemailer@6.9.16: {}
+
+  pako@2.1.0: {}
+
+  pizzip@3.1.7:
+    dependencies:
+      pako: 2.1.0
+
+  tmp@0.2.3: {}
