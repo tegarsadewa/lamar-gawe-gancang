@@ -1,4 +1,4 @@
-# lamar-gawe-gancang
+# Tutorial Lamar gawe gancang via e-mail 
 
 1. Install NodeJS
 2. Install Libre Office
